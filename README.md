@@ -1,1 +1,2 @@
 # typescript
+typeScript for OOP
