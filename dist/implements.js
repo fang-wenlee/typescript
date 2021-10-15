@@ -23,6 +23,18 @@ var Dog = /** @class */ (function () {
     return Dog;
 }());
 exports.Dog = Dog;
+var Cat = /** @class */ (function () {
+    function Cat(age, name, legs) {
+        this.age = age;
+        this.name = name;
+        this.legs = legs;
+    }
+    return Cat;
+}());
 var myDog = new Dog(14, "Kaui Kaui", 4);
 console.log(myDog.woof());
-console.log(myDog.age);
+console.log("My dog is " + myDog.age + " years old.");
+var myCat = new Cat(3, "baby", 4);
+console.log(myCat);
+console.log(myCat instanceof Animal); //false
+console.log(myDog instanceof Animal); //true
