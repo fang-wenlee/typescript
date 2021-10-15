@@ -13,12 +13,13 @@ typeScript for OOP
 4. Using Set to change property value 
 
 5. Inheritance => extends 
-               => Implements
+               => Implements : a => class b: interface
                => Super()
-               => Super() overrides
-               => Generics
+               => Super() overrides ==> override parent's method with super
+               => Generics => give static typeing to a dynamic type
+
                => Polymorphism
-               
+
 
 
 
