@@ -13,3 +13,6 @@ export class Message{
      }
 }
 
+const mesg1 = new Message("Work status", "Please let me know when I can start to work.", "fang-wen@hotmail.com")
+console.log(mesg1.emailcontent) 
+

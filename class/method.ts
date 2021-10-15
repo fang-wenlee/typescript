@@ -1,6 +1,6 @@
 //method is nothing more than funcitons that belong to our classes
 
-export class Message{
+export class MessageM{
      title:string;
      message:string;
      isSent:boolean;
@@ -17,5 +17,5 @@ export class Message{
 
 }
 
-const mesg1 = new Message("New Course!! Just $9.99!!!", "Check out our latest course on OOP with JavaScript");
+const mesg1 = new MessageM("New Course!! Just $9.99!!!", "Check out our latest course on OOP with JavaScript");
 console.log(mesg1.printMessage())

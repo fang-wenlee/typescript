@@ -1,4 +1,4 @@
-class Message{
+class MessageC{
     title:string;
     message:string;
     readonly id: string;

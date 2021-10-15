@@ -1,14 +1,14 @@
-var Message = /** @class */ (function () {
-    function Message(title, message, id, email) {
+var MessageC = /** @class */ (function () {
+    function MessageC(title, message, id, email) {
         this.title = title;
         this.message = message;
         this.id = id;
         this.email = email;
     }
-    Message.prototype.doEmailMatch = function (email) {
+    MessageC.prototype.doEmailMatch = function (email) {
         return this.email === email;
     };
-    return Message;
+    return MessageC;
 }());
 function MessageOld(title, message, id, email) {
     this.title = title;
