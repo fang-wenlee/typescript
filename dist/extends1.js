@@ -42,14 +42,8 @@ var Cat = /** @class */ (function (_super) {
     function Cat() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    Cat.prototype.meow = function () {
-        return 'Meow! Meow!';
-    };
     return Cat;
 }(Animal));
 exports.Cat = Cat;
 var myDog = new Dog(14, "Kaui Kaui", 4);
-console.log(myDog.woof());
-console.log(myDog.age);
-var myCat = new Cat(11, "Baby", 4);
-myCat.meow();
+myDog.woof();
