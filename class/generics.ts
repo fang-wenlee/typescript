@@ -22,7 +22,7 @@ interface ClassicUser2{
 
 const user1 = new User<ClassicUser1>();
 
-user1.mergeClassicUser( {name: {first:"fang",  last: "lee" }, isMale: false , age: 40, email: 'fang@poly.com' });
+user1.mergeClassicUser( {name: {first:"fang",  last: "lee" } });
 console.log ( user1.classicUserData.name.first )
 console.log ("User1 with more parameters: ", user1 )
 const user2 = new User<ClassicUser2>();

@@ -18,7 +18,10 @@ typeScript for OOP
                => Super() overrides ==> override parent's method with super
                => Generics => give static typeing to a dynamic type
 
-               => Polymorphism
+               => Polymorphism: 
+                  example: 1: method or param overriding [ super.method()] (child overrides parent method)
+                           2: method overloading -> same name metthods
+                           3: interface / abstract class implements
 
 
 

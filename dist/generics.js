@@ -19,7 +19,7 @@ var User = /** @class */ (function () {
     return User;
 }());
 var user1 = new User();
-user1.mergeClassicUser({ name: { first: "fang", last: "lee" }, isMale: false, age: 40, email: 'fang@poly.com' });
+user1.mergeClassicUser({ name: { first: "fang", last: "lee" } });
 console.log(user1.classicUserData.name.first);
 console.log("User1 with more parameters: ", user1);
 var user2 = new User();
