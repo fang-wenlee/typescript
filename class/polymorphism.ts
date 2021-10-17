@@ -1,4 +1,4 @@
-class Employee{
+class Employee {
      firstName: string;
      lastName: string;
     age: number;
@@ -33,11 +33,11 @@ class Level3Employee extends Level1Employee{
         return true;
     }
 
-   //public hasAllAccess(user?: User):boolean{
+   //public hasAllAccess(user?: <User>):boolean{
     //option1 public hasAllAccess(user: {}):boolean{
     // public hasAllAccess(user = new User{}):boolean{
-    //     return  user.age > 30 ;
-    // }
+       // return  user.age > 30 ;
+     //}
 }
 
 const e1 = new Level1Employee("fange", "lee", 20)

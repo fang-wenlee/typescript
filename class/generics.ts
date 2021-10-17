@@ -19,7 +19,7 @@ interface ClassicUser1{
 interface ClassicUser2{
     name: {first: string, middle:string,  last:string};
 }
-
+//use<> and define the type within it at the time instaciate a new instance 
 const user1 = new User<ClassicUser1>();
 
 user1.mergeClassicUser( {name: {first:"fang",  last: "lee" } });

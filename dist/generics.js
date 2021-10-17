@@ -18,6 +18,7 @@ var User = /** @class */ (function () {
     };
     return User;
 }());
+//use<> and define the type within it at the time instaciate a new instance 
 var user1 = new User();
 user1.mergeClassicUser({ name: { first: "fang", last: "lee" } });
 console.log(user1.classicUserData.name.first);
