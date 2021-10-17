@@ -28,6 +28,13 @@ var Admin = /** @class */ (function (_super) {
     function Admin(firstName, lastName, email) {
         return _super.call(this, firstName, lastName, email) || this;
     }
+    Object.defineProperty(Admin.prototype, "fullName", {
+        get: function () {
+            return this.firstName + " " + this.lastName;
+        },
+        enumerable: false,
+        configurable: true
+    });
     return Admin;
 }(User1));
 var Guest = /** @class */ (function () {
@@ -37,9 +44,20 @@ var Guest = /** @class */ (function () {
         this.email = email;
         this.address = address;
     }
+    Object.defineProperty(Guest.prototype, "fullName", {
+        get: function () {
+            return this.firstName + " " + this.lastName;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Guest.prototype.chkEmail = function (email) {
+        return this.email === email;
+    };
     return Guest;
 }());
 var admin1 = new Admin("fang", "lee", "fang@test.com");
-console.log(admin1);
+console.log("Admin: ", admin1.fullName);
 var g1 = new Guest("fang", "lee", "fang@test.com", "Fremont");
 console.log(g1);
+console.log(g1.chkEmail("dave2@yaoo.com")); //false
