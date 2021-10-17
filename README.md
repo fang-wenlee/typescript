@@ -23,6 +23,19 @@ typeScript for OOP
                            2: method overloading -> same name metthods
                            3: interface / abstract class implements
 
+6. Encapsulation: [Another aspect of OOP]
+     1. Private: only accessible within class
+     2. Protected: only accessible within class itself and derived class
+         ** there would be issue, when implement the class with shape of parent, it wont' be implemente thing correctly 
+         ** because only child class  hss  access the private proter.
+        
+     3. Public: default
+
+6.1: Static
+
+6.2: readOnly 
+
+
 
 
 
