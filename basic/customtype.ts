@@ -1,9 +1,22 @@
-//define custom types with interface
-//enhancing interface definitions
+//define custom types with interface;  define structure of object with interfaces
+//enhancing interface definitions,readonly, ?
+//enum and liter type to restricting possible value
+//Allowing varialbe to be multiple types: Unitype instead of using any type
 
+//let originalCost : number | string; 
+type cost = number | string; //type keyword to assign a varialbe to accept multiple type 
+let originalCost :cost;
+
+enum InventoryItemCategory{
+      Computer = "computer",
+      Funiture = "funiture",
+      Sport = "sport"
+      
+  }
 interface InventoryItem{
       displayName: string;
-      inventoryType: string;
+      inventoryType:InventoryItemCategory; // enum type
+     // inventoryType: "computer" | "funiture" | "sport"; //literal types
       readonly trackingNumber: number;
       createDate: Date;
       originalCost?: number;
@@ -17,7 +30,7 @@ interface InventoryItem{
 function getInventoryItem(trackingNumber:number): InventoryItem{
    
       if(trackingNumber === 1 ){
-           return  { displayName:"Running shoes", inventoryType:"Sport", trackingNumber:12345, createDate: new Date(), originalCost: 100} ;
+           return  { displayName:"Running shoes", inventoryType:InventoryItemCategory.Sport, trackingNumber:12345, createDate: new Date(), originalCost: 100} ;
       }else {
               return null;
       }
@@ -38,7 +51,7 @@ console.log("Original Price:", inventoryItem.originalCost)
 saveInventoryItem(inventoryItem)
 
 saveInventoryItem({displayName:"MacBook Pro 15 Retina",
-                   inventoryType: "computer",
+                   inventoryType: InventoryItemCategory.Computer,
                    trackingNumber: 123456232,
                    createDate: new Date(),
  })
