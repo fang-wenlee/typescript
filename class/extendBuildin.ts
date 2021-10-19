@@ -18,4 +18,4 @@ class PowerArray<T> extends Array<T> {
 let arr1 = new PowerArray<number>(1, 2, 5, 10, 23);
 console.log(arr1)
  console.log( arr1.remove(2) );
-console.log(arr1.isEmpty()); // false
+console.log(arr1.isEmpty()); // false 
